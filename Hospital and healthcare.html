@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>City Care Hospital</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f8fa;
+        }
+
+        header {
+            background-color: #087e8b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #07535c;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        main {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #087e8b;
+        }
+
+        .card {
+            display: inline-block;
+            vertical-align: top;
+            background-color: #effafb;
+            border: 1px solid #c5e4e8;
+            padding: 15px;
+            margin: 8px;
+            width: 25%;
+            min-width: 200px;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #aaa;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #d8f0f2;
+        }
+
+        input, select {
+            width: 95%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            background-color: #087e8b;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+        }
+
+        footer {
+            background-color: #07535c;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                display: block;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>City Care Hospital</h1>
+    <p>Quality Healthcare for Everyone</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#departments">Departments</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#appointment">Appointment</a>
+</nav>
+
+<main>
+    <section id="home">
+        <h2>Welcome to City Care Hospital</h2>
+        <p>We provide quality healthcare with experienced
+           doctors and modern medical facilities.</p>
+
+        <h3>Emergency Contact</h3>
+        <p><b>Emergency number:</b> 108</p>
+        <p><b>Hospital phone:</b> 000-123-4567 (sample number)</p>
+    </section>
+
+    <section id="departments">
+        <h2>Our Departments</h2>
+
+        <div class="card">
+            <h3>Cardiology</h3>
+            <p>Treatment for heart-related problems.</p>
+        </div>
+
+        <div class="card">
+            <h3>Pediatrics</h3>
+            <p>Medical care for babies and children.</p>
+        </div>
+
+        <div class="card">
+            <h3>Orthopedics</h3>
+            <p>Treatment for bones and joints.</p>
+        </div>
+
+        <div class="card">
+            <h3>General Medicine</h3>
+            <p>General check-ups and common illnesses.</p>
+        </div>
+    </section>
+
+    <section id="doctors">
+        <h2>Our Doctors</h2>
+
+        <table>
+            <tr>
+                <th>Doctor Name</th>
+                <th>Specialty</th>
+                <th>Available Time</th>
+            </tr>
+            <tr>
+                <td>Dr. Anil Kumar</td>
+                <td>Cardiology</td>
+                <td>9 AM - 1 PM</td>
+            </tr>
+            <tr>
+                <td>Dr. Sita Rao</td>
+                <td>Pediatrics</td>
+                <td>10 AM - 2 PM</td>
+            </tr>
+            <tr>
+                <td>Dr. Ravi Teja</td>
+                <td>Orthopedics</td>
+                <td>2 PM - 6 PM</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Facilities and Visiting Hours</h2>
+        <ul>
+            <li>Medical laboratory</li>
+            <li>Pharmacy</li>
+            <li>Patient rooms and waiting area</li>
+            <li>Outpatient hours: 9 AM to 6 PM</li>
+            <li>Emergency department: Open 24 hours</li>
+        </ul>
+    </section>
+
+    <section id="appointment">
+        <h2>Request an Appointment</h2>
+
+        <form>
+            <label>Patient Name:</label><br>
+            <input type="text" placeholder="Enter your name"><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter your email"><br>
+
+            <label>Department:</label><br>
+            <select>
+                <option>Select Department</option>
+                <option>Cardiology</option>
+                <option>Pediatrics</option>
+                <option>Orthopedics</option>
+                <option>General Medicine</option>
+            </select><br>
+
+            <label>Preferred Date:</label><br>
+            <input type="date"><br>
+
+            <button type="button">Submit Request</button>
+        </form>
+
+        <p><small>This is a sample student project form.</small></p>
+    </section>
+</main>
+
+<footer>
+    <p>City Care Hospital | Student Project</p>
+</footer>
+
+</body>
+</html>

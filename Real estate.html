@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Real Estate Property Listing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f6fa;
+        }
+
+        header {
+            background-color: #245b83;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #183e5b;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        main {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #245b83;
+        }
+
+        .card {
+            display: inline-block;
+            vertical-align: top;
+            background-color: #f8fbfd;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 8px;
+            width: 25%;
+            min-width: 200px;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #aaa;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #dceaf3;
+        }
+
+        input, select {
+            padding: 8px;
+            margin: 8px 0;
+            width: 95%;
+        }
+
+        button {
+            background-color: #245b83;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+        }
+
+        footer {
+            background-color: #183e5b;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                display: block;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Dream Home Properties</h1>
+    <p>Find Your Perfect Home</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#properties">Properties</a>
+    <a href="#compare">Compare</a>
+    <a href="#search">Search</a>
+</nav>
+
+<main>
+    <section id="home">
+        <h2>Welcome to Dream Home Properties</h2>
+        <p>Find houses, apartments and rental properties
+           at affordable prices.</p>
+    </section>
+
+    <section id="properties">
+        <h2>Available Properties</h2>
+
+        <div class="card">
+            <h3>Green Villa</h3>
+            <p><b>Location:</b> Hyderabad</p>
+            <p><b>Type:</b> House</p>
+            <p><b>Bedrooms:</b> 3</p>
+            <p><b>Price:</b> ₹75,00,000</p>
+            <p>Amenities: Garden, parking and water supply.</p>
+        </div>
+
+        <div class="card">
+            <h3>City Apartment</h3>
+            <p><b>Location:</b> Vijayawada</p>
+            <p><b>Type:</b> Apartment</p>
+            <p><b>Bedrooms:</b> 2</p>
+            <p><b>Price:</b> ₹35,00,000</p>
+            <p>Amenities: Lift, security and parking.</p>
+        </div>
+
+        <div class="card">
+            <h3>Comfort Rental Home</h3>
+            <p><b>Location:</b> Visakhapatnam</p>
+            <p><b>Type:</b> Rental House</p>
+            <p><b>Bedrooms:</b> 2</p>
+            <p><b>Rent:</b> ₹12,000/month</p>
+            <p>Amenities: Kitchen and balcony.</p>
+        </div>
+    </section>
+
+    <section id="compare">
+        <h2>Property Comparison</h2>
+
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Type</th>
+                <th>Bedrooms</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Green Villa</td>
+                <td>House</td>
+                <td>3</td>
+                <td>₹75,00,000</td>
+            </tr>
+            <tr>
+                <td>City Apartment</td>
+                <td>Apartment</td>
+                <td>2</td>
+                <td>₹35,00,000</td>
+            </tr>
+            <tr>
+                <td>Comfort Rental Home</td>
+                <td>Rental</td>
+                <td>2</td>
+                <td>₹12,000/month</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="search">
+        <h2>Search for a Property</h2>
+
+        <form>
+            <label>Preferred Location:</label><br>
+            <input type="text" placeholder="Enter city name"><br>
+
+            <label>Property Type:</label><br>
+            <select>
+                <option>Any Type</option>
+                <option>House</option>
+                <option>Apartment</option>
+                <option>Rental</option>
+            </select><br>
+
+            <label>Maximum Budget:</label><br>
+            <input type="number" placeholder="Enter budget"><br>
+
+            <button type="button">Search</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Dream Home Properties | Student Project</p>
+</footer>
+
+</body>
+</html>

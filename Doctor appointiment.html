@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Doctor Appointment Booking</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f3ff;
+        }
+
+        header {
+            background-color: #6045a5;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #39266b;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        main {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #6045a5;
+        }
+
+        .card {
+            display: inline-block;
+            vertical-align: top;
+            width: 25%;
+            min-width: 200px;
+            padding: 15px;
+            margin: 8px;
+            background-color: #f8f6ff;
+            border: 1px solid #d8cff3;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #aaa;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e7e0fa;
+        }
+
+        input, select {
+            width: 95%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            background-color: #6045a5;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+        }
+
+        footer {
+            background-color: #39266b;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                display: block;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Doctor Appointment Booking</h1>
+    <p>Choose Your Doctor and Book Your Visit</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#slots">Time Slots</a>
+    <a href="#booking">Book Appointment</a>
+</nav>
+
+<main>
+    <section id="home">
+        <h2>Welcome to Our Booking Website</h2>
+        <p>View doctor profiles, check consultation timings
+           and select a suitable appointment time.</p>
+    </section>
+
+    <section id="doctors">
+        <h2>Doctor Profiles</h2>
+
+        <div class="card">
+            <h3>Dr. Ananya Rao</h3>
+            <p><b>Specialization:</b> Cardiologist</p>
+            <p><b>Experience:</b> 10 years</p>
+            <p><b>Consultation Fee:</b> ₹500</p>
+            <p><b>Timings:</b> 9 AM - 1 PM</p>
+        </div>
+
+        <div class="card">
+            <h3>Dr. Rohan Kumar</h3>
+            <p><b>Specialization:</b> Dermatologist</p>
+            <p><b>Experience:</b> 8 years</p>
+            <p><b>Consultation Fee:</b> ₹400</p>
+            <p><b>Timings:</b> 10 AM - 2 PM</p>
+        </div>
+
+        <div class="card">
+            <h3>Dr. Priya Sharma</h3>
+            <p><b>Specialization:</b> Pediatrician</p>
+            <p><b>Experience:</b> 7 years</p>
+            <p><b>Consultation Fee:</b> ₹350</p>
+            <p><b>Timings:</b> 2 PM - 6 PM</p>
+        </div>
+    </section>
+
+    <section id="slots">
+        <h2>Available Appointment Slots</h2>
+
+        <table>
+            <tr>
+                <th>Doctor</th>
+                <th>Day</th>
+                <th>Available Slots</th>
+            </tr>
+            <tr>
+                <td>Dr. Ananya Rao</td>
+                <td>Monday</td>
+                <td>9 AM, 10 AM, 11 AM</td>
+            </tr>
+            <tr>
+                <td>Dr. Rohan Kumar</td>
+                <td>Tuesday</td>
+                <td>10 AM, 11 AM, 1 PM</td>
+            </tr>
+            <tr>
+                <td>Dr. Priya Sharma</td>
+                <td>Wednesday</td>
+                <td>2 PM, 3 PM, 4 PM</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="booking">
+        <h2>Patient Registration Form</h2>
+
+        <form>
+            <label>Patient Name:</label><br>
+            <input type="text" placeholder="Enter full name"
+                   required><br>
+
+            <label>Age:</label><br>
+            <input type="number" placeholder="Enter age"><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter email"
+                   required><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" placeholder="Enter phone number"><br>
+
+            <label>Select Doctor:</label><br>
+            <select>
+                <option>Choose a doctor</option>
+                <option>Dr. Ananya Rao - Cardiologist</option>
+                <option>Dr. Rohan Kumar - Dermatologist</option>
+                <option>Dr. Priya Sharma - Pediatrician</option>
+            </select><br>
+
+            <label>Appointment Date:</label><br>
+            <input type="date"><br>
+
+            <label>Preferred Time:</label><br>
+            <select>
+                <option>Select Time</option>
+                <option>9:00 AM</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>2:00 PM</option>
+                <option>3:00 PM</option>
+            </select><br>
+
+            <button type="button">Book Appointment</button>
+        </form>
+
+        <p><small>This is a sample educational form.</small></p>
+    </section>
+</main>
+
+<footer>
+    <p>Doctor Appointment Booking | Student Project</p>
+</footer>
+
+</body>
+</html>
